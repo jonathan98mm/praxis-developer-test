@@ -1,6 +1,6 @@
 import 'package:praxis_developer_test/core/resources/data_state.dart';
 import 'package:praxis_developer_test/core/usecase/usecase.dart';
-import 'package:praxis_developer_test/features/list_items/data/models/employee.dart';
+import 'package:praxis_developer_test/features/list_items/domain/entities/employee.dart';
 import 'package:praxis_developer_test/features/list_items/domain/repository/employee_repository.dart';
 
 class GetEmployeesUseCase implements UseCase<DataState<List<EmployeeEntity>>, void> {

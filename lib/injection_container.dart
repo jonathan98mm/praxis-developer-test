@@ -6,7 +6,7 @@ import "package:praxis_developer_test/features/list_items/domain/repository/empl
 import "package:praxis_developer_test/features/list_items/domain/usecases/get_employees.dart";
 import "package:praxis_developer_test/features/list_items/presentation/bloc/remote/remote_employee_bloc.dart";
 
-final sl = GetIt.instance;
+final GetIt sl = GetIt.instance;
 
 Future<void> initializeDependencies() async {
   //Dio

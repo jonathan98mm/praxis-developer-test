@@ -1,15 +1,15 @@
 name: praxis_developer_test
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.3.3 <4.0.0'
+  sdk: ">=3.3.3 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  
+
   #State management
   flutter_bloc: ^8.1.5
 
@@ -28,7 +28,8 @@ dependencies:
   #Dio
   dio: ^5.4.3+1
 
-
+  #For colors selection
+  multi_dropdown: ^2.1.4
 
 dev_dependencies:
   flutter_test:
@@ -37,6 +38,8 @@ dev_dependencies:
   retrofit_generator: ^8.1.0
   build_runner: ^2.4.9
 
-
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/

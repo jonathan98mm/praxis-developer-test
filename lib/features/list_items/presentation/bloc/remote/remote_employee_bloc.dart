@@ -15,10 +15,12 @@ class RemoteEmployeeBloc extends Bloc<RemoteEmployeesEvent, RemoteEmployeesState
     final dataState = await _getEmployeesUseCase();
 
     if (dataState is DataSuccess && dataState.data!.isNotEmpty) {
+      print(dataState.data!);
       emit(RemoteEmployeesDone(dataState.data!));
     }
 
     if (dataState is DataFailed) {
+      print("Error: ${dataState.error!}");
       emit(RemoteEmployeesError(dataState.error!));
     }
   }

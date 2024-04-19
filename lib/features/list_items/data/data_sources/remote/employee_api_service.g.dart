@@ -42,8 +42,9 @@ class _EmployeesApiService implements EmployeesApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    List<EmployeeModel> value =
-        _result.data!["employees"].map((dynamic i) => EmployeeModel.fromJson(i as Map<String, dynamic>)).toList();
+    List<EmployeeModel> value = _result.data!["data"]["employees"]
+        .map<EmployeeModel>((dynamic i) => EmployeeModel.fromJson(i as Map<String, dynamic>))
+        .toList();
     final httpResponse = HttpResponse(value, _result);
     return httpResponse;
   }
